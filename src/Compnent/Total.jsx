@@ -4,7 +4,7 @@ const Total = () => {
     return (
         <div className='text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'>
             <h1 className='text-white text-3xl text-center p-5'>Trusted by Millions, Built for You</h1>
-            <div className='flex justify-evenly'>
+            <div className='flex justify-evenly p-6'>
                 <div className='text-center'>
                     <p>Total Downloads</p>
                     <h1 className='text-4xl font-bold'>29.6M</h1>

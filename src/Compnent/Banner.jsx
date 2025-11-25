@@ -4,7 +4,7 @@ import { FaAppStoreIos } from "react-icons/fa";
 
 const Banner = () => {
     return (
-        <div className='mt-5 bg-gray-300'>
+        <div className='mt-5 bg-gray-200'>
             
             <h1 className='text-center text-3xl font-bold mb-6 p-7'>We Build <br /><span className='text-transparent bg-clip-text bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'> Productive</span> Apps</h1>
             <p className='text-center'>AtHERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
