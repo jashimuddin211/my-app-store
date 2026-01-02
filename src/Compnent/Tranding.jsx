@@ -1,7 +1,8 @@
 import React, { Suspense, use } from 'react';
 import TrandingCard from './TrandingCard.jsx/TrandingCard';
+import { Link } from 'react-router';
 
-const trendingData =fetch('tranding.json').then(res => res.json())
+const trendingData =fetch('/tranding.json').then(res => res.json())
 
 const Tranding = () => {
     const data =use(trendingData)
@@ -19,6 +20,13 @@ const Tranding = () => {
     }
     </Suspense>
 </div>
+        </div>
+        <div className='flex justify-center p-7 '>
+           <Link to='apps'>
+            <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
+                <button className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] p-1 rounded-sm text-white w-30'>
+                Show All
+            </button></Suspense></Link>
         </div>
        </div>
     );

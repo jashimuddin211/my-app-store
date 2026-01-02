@@ -1,9 +1,16 @@
 import React from 'react';
+import Banner from '../Compnent/Banner';
+
+import Total from '../Compnent/Total';
+import Tranding from '../Compnent/Tranding';
+
 
 const Home = () => {
     return (
         <div>
-        <h1>this is home</h1>    
+        <Banner></Banner>
+           <Total></Total>
+           <Tranding></Tranding>
         </div>
     );
 };
