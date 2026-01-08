@@ -2,6 +2,7 @@ import React, { Suspense, use, useState } from "react";
 import TrandingCard from "../Compnent/TrandingCard.jsx/TrandingCard";
 import { Link } from "react-router";
 
+
 const trendingData = fetch("/allApp.json").then((res) => res.json());
 
 const Apps = () => {
@@ -9,7 +10,7 @@ const Apps = () => {
 
   const [search, setSearch] = useState("");
 
-  // Filter apps based on title, companyName, or description
+  // Filter apps 
   const filteredData = data?.filter((app) =>
     app.title.toLowerCase().includes(search.toLowerCase()) ||
     app.companyName.toLowerCase().includes(search.toLowerCase()) ||
@@ -41,8 +42,8 @@ const Apps = () => {
           </div>
 {/* filters no apps found */}
 {filteredData && filteredData.length > 0 ? (
-<div className="grid grid-cols-4 gap-6 rounded-xl">
-            <Suspense>
+<div className="p-5 rounded-xl md:grid grid-cols-4 gap-6 rounded-xl">
+            <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
               {filteredData?.map((e) => (
                 <TrandingCard key={e.id} e={e} />
               ))}

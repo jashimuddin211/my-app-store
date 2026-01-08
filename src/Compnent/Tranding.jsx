@@ -11,7 +11,7 @@ const Tranding = () => {
          <div className='max-w-[1280px] mx-auto pt-8'>
             <h1 className='font-bold text-3xl text-center'>Trending Apps</h1>
             <p className='text-center pb-8'>Explore All Trending Apps on the Market developed by us</p>
-<div className='grid grid-cols-4 gap-6 rounded-xl'>
+<div className=' p-5 rounded-xl  md:grid grid-cols-4 gap-6 rounded-xl'>
     <Suspense >
         {
         data.map(e =>(
