@@ -60,7 +60,7 @@ const AppDetails = () => {
     <div className='bg-gray-200 mt-8'>
       <div className='max-w-[1280px] mx-auto p-7'>
 
-        <div className='flex gap-5'>
+        <div className='gap-5 md:flex gap-5'>
           <img className='w-50' src={image} alt={title} />
 
           <div>

@@ -10,7 +10,7 @@ const Navbar = () => {
         <div>
             <div className='  mt-5 md:flex justify-evenly'>
                 <Link to='/'><div className='flex justify-center items-center'>
-                    <img className='h-8 w-8' src="/public/logo.png" alt="" />
+                  
                     <h1 className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'>HERO ST.</h1>
                 </div></Link>
                 <div className='flex justify-center md:flex gap-5'>
